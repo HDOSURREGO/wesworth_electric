@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import Electric from "./Electric";
 // import Builders from "./Builders";
 // import Management from "./Management";
-import WesworthConstruction from "./img/WElectric_transparente.png";
+import WesworthElectric from "./img/WElectric_transparente.png";
 import "./NavBar.css";
 
 export default class NavBar extends React.Component {
@@ -13,33 +13,33 @@ export default class NavBar extends React.Component {
 			<div className="navbar">
 				<div className="nav-logo">
 					<Link to={"/"} className="link">
-						<img src={WesworthConstruction} alt="Wesworth Construction" />
+						<img src={WesworthElectric} alt="Wesworth Construction" />
 					</Link>
 				</div>
 				<div className="nav-titles">
 					<ul>
 						<li>
 							<Link to={"/management"} className="link">
-								{/* {Management} */}
-								MANAGEMENT
+								{/* {Home} */}
+								HOME
 							</Link>
 						</li>
 						<li>
 							<Link to={"/builders"} className="link">
-								{/* {Builders} */}
-								BUILDERS
+								{/* {Industrial} */}
+								INDUSTRIAL
 							</Link>
 						</li>
 						<li>
 							<Link to={"/electric"} className="link">
-								{/* {Electric} */}
-								ELECTRIC
+								{/* {Commercial} */}
+								COMMERCIAL
 							</Link>
 						</li>
 						<li>
 							<Link to={"/"} className="link">
-								{/* {Home} */}
-								HOME
+								{/* {PropertyManagers} */}
+								PROPERTY MANAGERS
 							</Link>
 						</li>
 					</ul>
